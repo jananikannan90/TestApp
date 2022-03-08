@@ -28,8 +28,12 @@ public class TestInitialize extends FrameworkInitialize {
 
         initializeBrowser(Settings.BrowserType);
         Settings.logUtil.Write("Browser Initialized");
+
         DriverContext.Browser.GoToUrl(Settings.BaseURL);
         Settings.logUtil.Write("Navigated to URL " + Settings.BaseURL);
+
+        DriverContext.Browser.maximize();
+        Settings.logUtil.Write("Window maximized");
 
     }
 

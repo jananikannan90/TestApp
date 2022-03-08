@@ -15,7 +15,6 @@ public class SearchSteps {
         CurrentPage = GetInstance(GoogleHomePage.class);
         CurrentPage.As(GoogleHomePage.class).enterSearchKeyword(keyword);
         CurrentPage = CurrentPage.As(GoogleHomePage.class).search();
-        Thread.sleep(3000);
     }
 
     @Then("^Search results should have a link to (.+)$")

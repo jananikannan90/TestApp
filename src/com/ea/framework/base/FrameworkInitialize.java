@@ -3,6 +3,7 @@ package com.ea.framework.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FrameworkInitialize extends Base {
     public void initializeBrowser(BrowserType browserType) {
@@ -17,8 +18,6 @@ public class FrameworkInitialize extends Base {
                 driver = new FirefoxDriver();
                 break;
             }
-
-
         }
         //Set the driver
         DriverContext.setDriver(driver);
